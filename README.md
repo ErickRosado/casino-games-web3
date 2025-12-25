@@ -8,7 +8,7 @@ A modern crypto-powered gaming platform supporting multi-chain tokens and exciti
 
 ---
 
-## Games Included
+## Games Includeddd
 
 | Game | Description | Preview |
 |------|-------------|---------|
