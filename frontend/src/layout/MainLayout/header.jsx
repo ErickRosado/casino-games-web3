@@ -49,8 +49,9 @@ const useStyles = makeStyles(() => ({
         gap: '21px'
     },
     LogoIcon: {
-        width: '120px',
+        width: '96px',
         height: 'auto',
+        borderRadius: '10px',
         objectFit: 'cover',
         "@media (max-width: 1024px)": {
             display: 'none'
