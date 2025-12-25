@@ -7,7 +7,6 @@ import { useEffect, useState, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { ReactComponent as MenuCollapeIcon } from "assets/icons/MenuCollaps.svg";
 import { ReactComponent as MobileMenuCollapeIcon } from "assets/icons/mobile-menu.svg";
-import { ReactComponent as LogoIcon } from "assets/icons/Logo.svg";
 import { ReactComponent as AlarmIcon } from "assets/icons/AlarmIcon.svg";
 import { ReactComponent as ChatIcon } from "assets/icons/ChatIcon.svg";
 import { ReactComponent as SystemMessageIcon } from "assets/icons/MessageIcon.svg";
@@ -501,7 +500,6 @@ const MainHeader = () => {
                 {/* <IconButton className={classes.MobileMenuIconButton} onClick={handleMobileMenu}>
                     <MobileMenuCollapeIcon />
                 </IconButton> */}
-                {/* <LogoIcon className={classes.LogoIcon} /> */}
                 <img src={`/assets/images/Logo.png`} className={classes.LogoIcon} alt="Logo" />
             </Box>
             <Box className={classes.HeaderMiddleBox}>
