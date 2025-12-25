@@ -211,7 +211,8 @@ const BetInputBox = () => {
 
     const { addToast } = useToasts();
     const authData = useSelector((state) => state.authentication);
-    const currency = authData.isAuth ? authData.userData.currency : '';
+    const currency = authData.isAuth ? authData.userData.currency : null;
+    const coinType = currency?.coinType?.toLowerCase() ?? 'zelo';
 
     const [turtleNum, setTurtleNum] = useState(0);
     const [betAmount, setBetAmount] = useState(100);
@@ -365,7 +366,7 @@ const BetInputBox = () => {
                 </Box>
                 <Box className={classes.AmountInputBox}>
                     <Box className={classes.InputBox}>
-                        <img src={`/assets/images/coins/${currency.coinType.toLowerCase()}.png`} alt="icon" />
+                        <img src={`/assets/images/coins/${coinType}.png`} alt="icon" />
                         <input value={betAmount} onChange={handleBetAmount} className={classes.BetAmountInput} disabled={buttonDisabled} />
                     </Box>
                     <Box style={{ flex: 'none' }}>
