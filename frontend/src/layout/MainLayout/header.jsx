@@ -7,7 +7,6 @@ import { useEffect, useState, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { ReactComponent as MenuCollapeIcon } from "assets/icons/MenuCollaps.svg";
 import { ReactComponent as MobileMenuCollapeIcon } from "assets/icons/mobile-menu.svg";
-import { ReactComponent as LogoIcon } from "assets/icons/Logo.svg";
 import { ReactComponent as AlarmIcon } from "assets/icons/AlarmIcon.svg";
 import { ReactComponent as ChatIcon } from "assets/icons/ChatIcon.svg";
 import { ReactComponent as SystemMessageIcon } from "assets/icons/MessageIcon.svg";
@@ -37,7 +36,7 @@ const useStyles = makeStyles(() => ({
         justifyContent: 'space-between',
         alignItems: 'center',
         position: 'fixed',
-        background: '#1f1e25',
+        background: '#000',
         zIndex: '10',
         "@media (max-width: 681px)": {
             padding: '8px 14px'
@@ -50,6 +49,10 @@ const useStyles = makeStyles(() => ({
         gap: '21px'
     },
     LogoIcon: {
+        width: '96px',
+        height: 'auto',
+        borderRadius: '10px',
+        objectFit: 'cover',
         "@media (max-width: 1024px)": {
             display: 'none'
         }
@@ -98,8 +101,8 @@ const useStyles = makeStyles(() => ({
         gap: "10px",
         width: "115px",
         height: "47px",
-        background: "#2C2C3A",
-        border: "1px solid #363646",
+        background: "#010f4e",
+        border: "1px solid #010f4e",
         borderRadius: "8px",
         color: '#FFF',
         "@media (max-width: 560px)": {
@@ -114,8 +117,8 @@ const useStyles = makeStyles(() => ({
         gap: "10px",
         width: "115px",
         height: "47px",
-        background: "#2C2C3A",
-        border: "1px solid #363646",
+        background: "#010f4e",
+        border: "1px solid #010f4e",
         borderRadius: "8px",
         color: '#FFF',
         "@media (max-width: 764px)": {
@@ -132,7 +135,7 @@ const useStyles = makeStyles(() => ({
         gap: "10px",
         width: "115px",
         height: "47px",
-        background: "linear-gradient(48.57deg, #5A45D1 24.42%, #BA6AFF 88.19%)",
+        background: "#010f4e",
         borderRadius: "8px",
         color: '#FFF',
         "@media (max-width: 764px)": {
@@ -146,8 +149,8 @@ const useStyles = makeStyles(() => ({
         gap: "10px",
         width: "50px",
         height: "47px",
-        background: "#2C2C3A",
-        border: "1px solid #363646",
+        background: "#010f4e",
+        border: "1px solid #010f4e",
         borderRadius: "8px",
         padding: '0px',
         "@media (max-width: 764px)": {
@@ -156,7 +159,7 @@ const useStyles = makeStyles(() => ({
     },
     ProfileButton: {
         borderRadius: '50%',
-        background: '#282836',
+        background: '#010f4e',
         padding: '0px',
         width: "50px",
         height: "47px"
@@ -171,7 +174,7 @@ const useStyles = makeStyles(() => ({
         }
     },
     WalletButton: {
-        background: "linear-gradient(48.57deg, #5A45D1 24.42%, #BA6AFF 88.19%)",
+        background: "#010f4e",
         borderRadius: "8px",
         color: "#FFF",
         display: "flex",
@@ -221,7 +224,7 @@ const useStyles = makeStyles(() => ({
         width: '100%'
     },
     CoinTypeBox: {
-        background: '#2C2C3A',
+        background: '#010f4e',
         padding: '0px 5px',
         borderRadius: 4,
         fontWeight: 'bold',
@@ -290,7 +293,7 @@ const useStyles = makeStyles(() => ({
         width: '18.7px',
         height: '18.7px',
         borderRadius: '50%',
-        background: '#1F1E25',
+        background: '#010f4e',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center'
@@ -501,8 +504,7 @@ const MainHeader = () => {
                 {/* <IconButton className={classes.MobileMenuIconButton} onClick={handleMobileMenu}>
                     <MobileMenuCollapeIcon />
                 </IconButton> */}
-                {/* <LogoIcon className={classes.LogoIcon} /> */}
-                <img src={`/assets/images/Logo.png`} className={classes.LogoIcon} alt="Logo" />
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/86/df/fa/86dffa89-81e1-4a73-4dc9-807575e69db2/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/1200x630wa.jpg" className={classes.LogoIcon} alt="Logo" />
             </Box>
             <Box className={classes.HeaderMiddleBox}>
                 <Box className={classes.CoinAmountBox}>

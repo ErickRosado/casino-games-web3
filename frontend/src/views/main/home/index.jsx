@@ -280,7 +280,7 @@ const useStyles = makeStyles(() => ({
         }
     },
     SelectedButton: {
-        background: 'linear-gradient(48.57deg, #5A45D1 24.42%, #BA6AFF 88.19%)'
+        background: '#010f4e'
     }
 }));
 
