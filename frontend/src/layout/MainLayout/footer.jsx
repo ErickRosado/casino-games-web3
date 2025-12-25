@@ -114,11 +114,11 @@ const MainFooter = () => {
             </Box>
             <Box className={classes.DividLine}></Box>
             <Box className={classes.CopyRightBox}>
-                <img src={`/assets/images/Logo.png`} className={classes.LogoIcon} alt="Logo" />
-                <span className={classes.CopyRightText}>copyright ©2023</span>
+                <img src={`https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/86/df/fa/86dffa89-81e1-4a73-4dc9-807575e69db2/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/1200x630wa.jpg`} className={classes.LogoIcon} alt="Logo" />
+                <span className={classes.CopyRightText}>copyright ©2026</span>
                 <Box className={classes.ContactBox}>
                     <Link to="https://twitter.com/memewarsx" target="_blank"><TwitterIcon /></Link>
-                    <Link to="https://t.me/MWXPORTAL" target="_blank"><TelegramIcon /></Link>
+                    <Link to="https://www.instagram.com/laniakea_qpu/" target="_blank"><InstagramIcon /></Link>
                 </Box>
             </Box>
         </Box>
