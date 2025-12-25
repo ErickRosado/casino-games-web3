@@ -70,6 +70,15 @@ const useStyles = makeStyles(() => ({
         gap: '6px',
         alignItems: 'center'
     },
+    SocialIconLink: {
+        width: '32px',
+        height: '32px',
+        borderRadius: '50%',
+        backgroundColor: '#FFF',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
     GambleIcon: {
         width: '225px',
         height: '54px'
@@ -123,7 +132,7 @@ const MainFooter = () => {
                 <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/86/df/fa/86dffa89-81e1-4a73-4dc9-807575e69db2/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/1200x630wa.jpg" className={classes.LogoIcon} alt="Logo" />
                 <span className={classes.CopyRightText}>copyright ©2026</span>
                 <Box className={classes.ContactBox}>
-                    <Link to="https://twitter.com/memewarsx" target="_blank"><TwitterIcon /></Link>
+                    <Link to="https://twitter.com/memewarsx" target="_blank" className={classes.SocialIconLink}><TwitterIcon /></Link>
                     <Link to="https://www.instagram.com/laniakea_qpu/" target="_blank"><InstagramIcon /></Link>
                 </Box>
             </Box>

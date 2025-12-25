@@ -49,6 +49,9 @@ const useStyles = makeStyles(() => ({
         gap: '21px'
     },
     LogoIcon: {
+        width: '120px',
+        height: 'auto',
+        objectFit: 'cover',
         "@media (max-width: 1024px)": {
             display: 'none'
         }
@@ -500,7 +503,7 @@ const MainHeader = () => {
                 {/* <IconButton className={classes.MobileMenuIconButton} onClick={handleMobileMenu}>
                     <MobileMenuCollapeIcon />
                 </IconButton> */}
-                <img src={`/assets/images/Logo.png`} className={classes.LogoIcon} alt="Logo" />
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/86/df/fa/86dffa89-81e1-4a73-4dc9-807575e69db2/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/1200x630wa.jpg" className={classes.LogoIcon} alt="Logo" />
             </Box>
             <Box className={classes.HeaderMiddleBox}>
                 <Box className={classes.CoinAmountBox}>
