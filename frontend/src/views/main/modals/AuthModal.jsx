@@ -13,7 +13,6 @@ import { useGoogleLogin } from '@react-oauth/google';
 import { userGoogleLogin, metamaskLogin, getMyBalances, emailLogin, verifyEmailCode, updateProfileSet } from "redux/actions/auth";
 import { useToasts } from "react-toast-notifications";
 import Config from "config/index";
-import { ReactComponent as LogoIcon } from "assets/icons/Logo.svg";
 import { ReactComponent as GoogleIcon } from "assets/icons/GoogleIcon.svg";
 import ReactCodeInput from "react-verification-code-input";
 import { LoadingContext } from "layout/Context/loading";
@@ -76,6 +75,12 @@ const useStyles = makeStyles(() => ({
             width: '245px',
             height: '32px'
         }
+    },
+    ModalLogoImage: {
+        width: '140px',
+        height: 'auto',
+        borderRadius: '10px',
+        objectFit: 'cover'
     },
     ModalInputBox: {
         width: '100%',
@@ -492,7 +497,7 @@ const AuthenticationModal = ({ open, setOpen, authType }) => {
                 </IconButton>
                 <Box className={classes.ModalBodyBox}>
                     <Box className={classes.ModalLogoBox}>
-                        <img src={`/assets/images/Logo.png`} alt="Logo" />
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/86/df/fa/86dffa89-81e1-4a73-4dc9-807575e69db2/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/1200x630wa.jpg" alt="Logo" className={classes.ModalLogoImage} />
                     </Box>
                     {
                         (!codeInput && profileSet === PROFILE_STATUS.INIT) &&
