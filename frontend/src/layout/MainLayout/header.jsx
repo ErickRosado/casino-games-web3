@@ -37,7 +37,7 @@ const useStyles = makeStyles(() => ({
         justifyContent: 'space-between',
         alignItems: 'center',
         position: 'fixed',
-        background: '#000',
+        background: '#010f4e',
         zIndex: '10',
         "@media (max-width: 681px)": {
             padding: '8px 14px'
@@ -98,8 +98,8 @@ const useStyles = makeStyles(() => ({
         gap: "10px",
         width: "115px",
         height: "47px",
-        background: "#2C2C3A",
-        border: "1px solid #363646",
+        background: "#010f4e",
+        border: "1px solid #010f4e",
         borderRadius: "8px",
         color: '#FFF',
         "@media (max-width: 560px)": {
@@ -114,8 +114,8 @@ const useStyles = makeStyles(() => ({
         gap: "10px",
         width: "115px",
         height: "47px",
-        background: "#2C2C3A",
-        border: "1px solid #363646",
+        background: "#010f4e",
+        border: "1px solid #010f4e",
         borderRadius: "8px",
         color: '#FFF',
         "@media (max-width: 764px)": {
@@ -132,7 +132,7 @@ const useStyles = makeStyles(() => ({
         gap: "10px",
         width: "115px",
         height: "47px",
-        background: "linear-gradient(48.57deg, #5A45D1 24.42%, #BA6AFF 88.19%)",
+        background: "#010f4e",
         borderRadius: "8px",
         color: '#FFF',
         "@media (max-width: 764px)": {
@@ -146,8 +146,8 @@ const useStyles = makeStyles(() => ({
         gap: "10px",
         width: "50px",
         height: "47px",
-        background: "#2C2C3A",
-        border: "1px solid #363646",
+        background: "#010f4e",
+        border: "1px solid #010f4e",
         borderRadius: "8px",
         padding: '0px',
         "@media (max-width: 764px)": {
@@ -156,7 +156,7 @@ const useStyles = makeStyles(() => ({
     },
     ProfileButton: {
         borderRadius: '50%',
-        background: '#282836',
+        background: '#010f4e',
         padding: '0px',
         width: "50px",
         height: "47px"
@@ -171,7 +171,7 @@ const useStyles = makeStyles(() => ({
         }
     },
     WalletButton: {
-        background: "linear-gradient(48.57deg, #5A45D1 24.42%, #BA6AFF 88.19%)",
+        background: "#010f4e",
         borderRadius: "8px",
         color: "#FFF",
         display: "flex",
@@ -221,7 +221,7 @@ const useStyles = makeStyles(() => ({
         width: '100%'
     },
     CoinTypeBox: {
-        background: '#2C2C3A',
+        background: '#010f4e',
         padding: '0px 5px',
         borderRadius: 4,
         fontWeight: 'bold',
@@ -290,7 +290,7 @@ const useStyles = makeStyles(() => ({
         width: '18.7px',
         height: '18.7px',
         borderRadius: '50%',
-        background: '#1F1E25',
+        background: '#010f4e',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center'

@@ -10,7 +10,7 @@ import { ReactComponent as InstagramIcon } from "assets/icons/InstagramIcon.svg"
 const useStyles = makeStyles(() => ({
     FooterBox: {
         width: '100%',
-        background: '#000',
+        background: '#010f4e',
         marginTop: '30px',
         padding: '37px 70px 13px 70px',
         "@media (max-width: 940px)": {
