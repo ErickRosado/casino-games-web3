@@ -37,7 +37,7 @@ const useStyles = makeStyles(() => ({
         justifyContent: 'space-between',
         alignItems: 'center',
         position: 'fixed',
-        background: '#010f4e',
+        background: '#000',
         zIndex: '10',
         "@media (max-width: 681px)": {
             padding: '8px 14px'

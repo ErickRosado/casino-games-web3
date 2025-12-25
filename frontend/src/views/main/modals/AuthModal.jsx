@@ -30,7 +30,7 @@ const useStyles = makeStyles(() => ({
         height: '714px',
         left: '50%',
         transform: 'translate(-50%)',
-        background: '#010f4e',
+        background: '#000',
         position: 'relative',
         display: 'flex',
         alignItems: 'center',
@@ -49,10 +49,10 @@ const useStyles = makeStyles(() => ({
         width: '64px',
         height: '64px',
         color: '#55556F',
-        background: '#010f4e',
-        border: '6px solid #010f4e',
+        background: '#000',
+        border: '6px solid #000',
         "&:hover": {
-            background: '#010f4e'
+            background: '#000'
         },
         "@media (max-width: 681px)": {
             transform: 'translate(-50%)',
@@ -83,7 +83,7 @@ const useStyles = makeStyles(() => ({
     },
     EmailInput: {
         width: '100%',
-        background: '#010f4e',
+        background: '#000',
         outline: 'none',
         border: 'none',
         textAlign: 'center',
@@ -113,7 +113,7 @@ const useStyles = makeStyles(() => ({
         borderRadius: '8px',
     },
     ORBox: {
-        background: '#010f4e',
+        background: '#000',
         color: '#FFF',
         marginTop: '20px',
         marginBottom: '20px',
@@ -137,7 +137,7 @@ const useStyles = makeStyles(() => ({
         width: '50px',
         height: '50px',
         borderRadius: '50%',
-        background: '#010f4e',
+        background: '#000',
         "&>img": {
             borderRadius: '50%',
             width: '100%',
@@ -175,7 +175,7 @@ const useStyles = makeStyles(() => ({
         }
     },
     backdrop: {
-        backgroundColor: '#010f4e',
+        backgroundColor: '#000',
         opacity: '0.95 !important'
     },
     CodeTitle: {
@@ -199,7 +199,7 @@ const useStyles = makeStyles(() => ({
         "&>div>input": {
             borderRadius: '6px',
             color: '#FFF',
-            background: '#010f4e',
+            background: '#000',
             border: 'none',
             width: '50px !important',
             height: '50px !important',
