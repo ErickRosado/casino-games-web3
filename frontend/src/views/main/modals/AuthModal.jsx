@@ -497,7 +497,7 @@ const AuthenticationModal = ({ open, setOpen, authType }) => {
                 </IconButton>
                 <Box className={classes.ModalBodyBox}>
                     <Box className={classes.ModalLogoBox}>
-                        <img src="/assets/images/Logo.png" alt="Logo" className={classes.ModalLogoImage} />
+                        <img src="/assets/images/brand-logo.svg" alt="Logo" className={classes.ModalLogoImage} />
                     </Box>
                     {
                         (!codeInput && profileSet === PROFILE_STATUS.INIT) &&

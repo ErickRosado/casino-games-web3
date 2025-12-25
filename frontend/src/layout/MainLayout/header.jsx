@@ -504,7 +504,7 @@ const MainHeader = () => {
                 {/* <IconButton className={classes.MobileMenuIconButton} onClick={handleMobileMenu}>
                     <MobileMenuCollapeIcon />
                 </IconButton> */}
-                <img src="/assets/images/Logo.png" className={classes.LogoIcon} alt="Logo" />
+                <img src="/assets/images/brand-logo.svg" className={classes.LogoIcon} alt="Logo" />
             </Box>
             <Box className={classes.HeaderMiddleBox}>
                 <Box className={classes.CoinAmountBox}>

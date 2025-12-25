@@ -129,7 +129,7 @@ const MainFooter = () => {
             </Box>
             <Box className={classes.DividLine}></Box>
             <Box className={classes.CopyRightBox}>
-                <img src="/assets/images/Logo.png" className={classes.LogoIcon} alt="Logo" />
+                <img src="/assets/images/brand-logo.svg" className={classes.LogoIcon} alt="Logo" />
                 <span className={classes.CopyRightText}>copyright ©2026</span>
                 <Box className={classes.ContactBox}>
                     <Link to="https://twitter.com/memewarsx" target="_blank" className={classes.SocialIconLink}><TwitterIcon /></Link>
