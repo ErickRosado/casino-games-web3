@@ -13,7 +13,6 @@ import { useGoogleLogin } from '@react-oauth/google';
 import { userGoogleLogin, metamaskLogin, getMyBalances, emailLogin, verifyEmailCode, updateProfileSet } from "redux/actions/auth";
 import { useToasts } from "react-toast-notifications";
 import Config from "config/index";
-import { ReactComponent as LogoIcon } from "assets/icons/Logo.svg";
 import { ReactComponent as GoogleIcon } from "assets/icons/GoogleIcon.svg";
 import ReactCodeInput from "react-verification-code-input";
 import { LoadingContext } from "layout/Context/loading";
@@ -30,7 +29,7 @@ const useStyles = makeStyles(() => ({
         height: '714px',
         left: '50%',
         transform: 'translate(-50%)',
-        background: '#2C2C3A',
+        background: '#000',
         position: 'relative',
         display: 'flex',
         alignItems: 'center',
@@ -49,10 +48,10 @@ const useStyles = makeStyles(() => ({
         width: '64px',
         height: '64px',
         color: '#55556F',
-        background: '#2C2C3A',
-        border: '6px solid #24252D',
+        background: '#000',
+        border: '6px solid #000',
         "&:hover": {
-            background: '#2C2C3AEE'
+            background: '#000'
         },
         "@media (max-width: 681px)": {
             transform: 'translate(-50%)',
@@ -77,13 +76,19 @@ const useStyles = makeStyles(() => ({
             height: '32px'
         }
     },
+    ModalLogoImage: {
+        width: '140px',
+        height: 'auto',
+        borderRadius: '10px',
+        objectFit: 'cover'
+    },
     ModalInputBox: {
         width: '100%',
         marginBottom: '14px'
     },
     EmailInput: {
         width: '100%',
-        background: '#424253',
+        background: '#000',
         outline: 'none',
         border: 'none',
         textAlign: 'center',
@@ -107,13 +112,13 @@ const useStyles = makeStyles(() => ({
         lineHeight: '20px'
     },
     NextButton: {
-        background: 'linear-gradient(48.57deg, #5A45D1 24.42%, #BA6AFF 88.19%);',
+        background: '#010f4e',
         color: '#FFF',
         textTransform: 'uppercase',
         borderRadius: '8px',
     },
     ORBox: {
-        background: '#424253',
+        background: '#000',
         color: '#FFF',
         marginTop: '20px',
         marginBottom: '20px',
@@ -130,14 +135,14 @@ const useStyles = makeStyles(() => ({
         }
     },
     AppleLoginButton: {
-        background: '#000',
+        background: '#010f4e',
         color: '#FFF'
     },
     WalletConnectIcon: {
         width: '50px',
         height: '50px',
         borderRadius: '50%',
-        background: '#FFF',
+        background: '#000',
         "&>img": {
             borderRadius: '50%',
             width: '100%',
@@ -156,7 +161,7 @@ const useStyles = makeStyles(() => ({
         alignItems: 'center !important',
         justifyContent: 'center',
         position: 'relative',
-        background: 'linear-gradient(rgb(249, 253, 255) 0%, rgb(207, 226, 234) 100%)',
+        background: '#010f4e',
         marginBottom: '10px',
         "&>div": {
             background: 'unset !important',
@@ -175,7 +180,7 @@ const useStyles = makeStyles(() => ({
         }
     },
     backdrop: {
-        backgroundColor: '#1F1E25',
+        backgroundColor: '#000',
         opacity: '0.95 !important'
     },
     CodeTitle: {
@@ -199,7 +204,7 @@ const useStyles = makeStyles(() => ({
         "&>div>input": {
             borderRadius: '6px',
             color: '#FFF',
-            background: '#424253',
+            background: '#000',
             border: 'none',
             width: '50px !important',
             height: '50px !important',
@@ -492,7 +497,7 @@ const AuthenticationModal = ({ open, setOpen, authType }) => {
                 </IconButton>
                 <Box className={classes.ModalBodyBox}>
                     <Box className={classes.ModalLogoBox}>
-                        <img src={`/assets/images/Logo.png`} alt="Logo" />
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/86/df/fa/86dffa89-81e1-4a73-4dc9-807575e69db2/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/1200x630wa.png" alt="Logo" className={classes.ModalLogoImage} />
                     </Box>
                     {
                         (!codeInput && profileSet === PROFILE_STATUS.INIT) &&
