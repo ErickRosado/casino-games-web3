@@ -133,7 +133,7 @@ const MainFooter = () => {
                 <span className={classes.CopyRightText}>copyright ©2026</span>
                 <Box className={classes.ContactBox}>
                     <Link to="https://twitter.com/memewarsx" target="_blank" className={classes.SocialIconLink}><TwitterIcon /></Link>
-                    <Link to="https://www.instagram.com/laniakea_qpu/" target="_blank"><InstagramIcon /></Link>
+                    <Link to="https://www.instagram.com/laniakea_qpu/" target="_blank" rel="noreferrer"><InstagramIcon /></Link>
                 </Box>
             </Box>
         </Box>
